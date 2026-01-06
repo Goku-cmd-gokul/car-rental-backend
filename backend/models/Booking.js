@@ -5,8 +5,8 @@ const bookingSchema = new mongoose.Schema({
   email: { type: String, required: true },
   carModel: { type: String, required: true },
   phone: { type: String, required: true },
-  pickupDate: { type: Date },
-  returnDate: { type: Date },
+  pickupDate: { type: Date, required: true },
+  returnDate: { type: Date, required: true },
   createdAt: { type: Date, default: Date.now }
 });
 
